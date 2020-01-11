@@ -1,14 +1,14 @@
-// import React from 'react';
+import React from 'react';
 
-// import './style.css';
+import './style.css';
 
-// function Header(props) {
-//     return (
-//         <header>
-//         <div className= "title">Harrison Ford Click Game</div>
-//         <div className= "scoreboard"> Score: {props.score}</div>
-//         </header>
-//     )
-// }
+function Header(props) {
+    return (
+        <header>
+        <div className= "title">Harrison Ford Click Game</div>
+        <div className= "scoreboard"> Score: {props.score}</div>
+        </header>
+    )
+}
 
-// export default Header
+export default Header
