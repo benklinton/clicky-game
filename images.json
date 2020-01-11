@@ -1,0 +1,62 @@
+[
+    {
+      "id": 1,
+      "imgURL": "./Harrison-Ford1.jpg",
+      "clicked": false
+    },
+    {
+      "id": 2,
+      "imgURL": "./Harrison-Ford2.jpg",
+      "clicked": false
+    },
+    {
+      "id": 3,
+      "imgURL": "./Harrison-Ford3.jpg",
+      "clicked": false
+    },
+    {
+      "id": 4,
+      "imgURL": "./Harrison-Ford4.jpg",
+      "clicked": false
+    },
+    {
+      "id": 5,
+      "imgURL": "./Harrison-Ford5.jpg",
+      "clicked": false
+    },
+    {
+      "id": 6,
+      "imgURL": "./Harrison-Ford6.jpg",
+      "clicked": false
+    },
+    {
+      "id": 7,
+      "imgURL": "./Harrison-Ford7.jpg",
+      "clicked": false
+    },
+    {
+      "id": 8,
+      "imgURL": "./Harrison-Ford8.jpg",
+      "clicked": false
+    },
+    {
+      "id": 9,
+      "imgURL": "./Harrison-Ford9.jpg",
+      "clicked": false
+    },
+    {
+      "id": 10,
+      "imgURL": "./Harrison-Ford10.jpg",
+      "clicked": false
+    },
+    {
+      "id": 11,
+      "imgURL": "./Harrison-Ford11.jpg",
+      "clicked": false
+    },
+    {
+      "id": 12,
+      "imgURL": "./Harrison-Ford12.jpg",
+      "clicked": false
+    }
+ ]
