@@ -8,11 +8,21 @@ import data from "./images.json";
 class App extends Component {
 state = {
 data,
-score: 0
+score: 0,
+images: []
 }
 
 handleClickEvent = () => {
-    console.log("you clicked me")
+    this.shuffle();
+}
+
+shuffle = () => {
+    let shuffledImages = this.state.data;
+    shuffledImages = shuffledImages.sort(() => Math.random() - 0.42);
+
+    this.setState({
+        images: shuffledImages
+    })
 }
 render () {
     return (
