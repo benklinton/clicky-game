@@ -9,11 +9,13 @@ class App extends Component {
 state = {
 data,
 score: 0,
-images: []
+images: [],
+clicked: 0
 }
 
-handleClickEvent = () => {
+handleClickEvent = (id) => {
     this.shuffle();
+    this.clicked(id);
 }
 
 shuffle = () => {
@@ -24,10 +26,54 @@ shuffle = () => {
         images: shuffledImages
     })
 }
+
+clicked = (id) => {
+
+    let clicked = this.state.clicked;
+
+    this.setState({
+        clicked: id
+    })
+
+    console.log(clicked)
+    console.log(id)
+
+    if(id === clicked) {
+        alert("correct")
+        let newscore = this.state.score
+        newscore = newscore + 1
+        this.setState({
+            score: newscore,
+            clicked: 0
+        })
+
+    }
+     else if (clicked === 0) {
+        console.log("do nothing")
+    }
+    else
+    {
+        alert("incorrect")
+        this.setState({
+            score: 0,
+            clicked: 0
+        })
+    }
+    
+    if( this.state.score === 5) {
+        alert("congats you beat the game, Ben now owes you a dollar")
+        this.setState({
+            score: 0,
+            clicked: 0
+        })
+    }
+    
+}
+
 render () {
     return (
         <div>
-            <Header/>
+            <Header score = {this.state.score}/>
             <div>
                 {this.state.data.map(item => (
                     <ImageCard

@@ -5,6 +5,7 @@ img  {
     display: flex;
     flex-wrap: wrap;
     margin: 10px;
+    float: left;
     
 }
 
