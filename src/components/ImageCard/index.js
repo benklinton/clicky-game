@@ -5,7 +5,7 @@ function Images(props) {
   return (
     <div className='img'>
       <img 
-        src={`img/${props.images}`} 
+        src={`img/${props.img}`} 
         alt='Harrison Ford' 
         onClick={() => props.clicked(props.id)}>
       </img>
